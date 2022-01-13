@@ -35,6 +35,10 @@ const Profile = () => {
               {githubState.user.blog}
             </a>
           </S.WrapperUserGeneric>
+          <S.WrapperUserGeneric>
+            <h3>Since Date:</h3>
+            <span>{new Date(githubState.user.created_at).toLocaleDateString()}</span>
+          </S.WrapperUserGeneric>
         </div>
         <S.WrapperStatusCount>
           <div>
