@@ -11,7 +11,10 @@ export const WrapperInfoUser = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   margin-left: 8px;
-  height: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
 
   h1 {
     font-size: 32px;
@@ -36,6 +39,9 @@ export const WrapperStatusCount = styled.div`
     margin: 8px;
     text-align: center;
   }
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 4px;
 `;
 
 export const WrapperUserGeneric = styled.div`

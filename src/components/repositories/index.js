@@ -34,8 +34,11 @@ const Repositories = () => {
                 <RepositoryItem
                   key={item.id}
                   name={item.name}
-                  linkToRepo={item.full_name}
+                  linkToRepo={item.html_url}
                   fullName={item.full_name}
+                  createdAt={item.created_at}
+                  updatedAt={item.updated_at}
+                  description={item.description}
                 />
               ))}
             </S.WrapperList>
@@ -48,6 +51,9 @@ const Repositories = () => {
                   name={item.name}
                   linkToRepo={item.html_url}
                   fullName={item.full_name}
+                  createdAt={item.created_at}
+                  updatedAt={item.updated_at}
+                  description={item.description}
                 />
               ))}
             </S.WrapperList>
